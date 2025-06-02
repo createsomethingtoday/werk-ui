@@ -4,7 +4,6 @@ import React from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Logo, Button, Link } from '@/components/atoms'
-import { cn } from '@/lib/utils'
 
 const navigation = [
   { name: 'Service', href: '#services' },
