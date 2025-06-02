@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "@fontsource/work-sans/400.css";
+@import "@fontsource/work-sans/600.css";
+
+@layer base {
+  body {
+    @apply font-sans text-werk-black bg-werk-white antialiased;
+  }
+  
+  h1 {
+    @apply text-5xl font-semibold leading-tight tracking-tight;
+  }
+  
+  h2 {
+    @apply text-4xl font-semibold leading-tight;
+  }
+  
+  h3 {
+    @apply text-3xl font-semibold leading-tight;
+  }
+  
+  h4 {
+    @apply text-2xl font-semibold;
+  }
+  
+  h5 {
+    @apply text-xl font-semibold;
+  }
+  
+  p {
+    @apply text-lg leading-relaxed;
+  }
+}
