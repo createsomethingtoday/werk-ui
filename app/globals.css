@@ -2,32 +2,90 @@
 @import "@fontsource/work-sans/400.css";
 @import "@fontsource/work-sans/600.css";
 
+@theme {
+  --color-werk-black: #1A1A1F;
+  --color-werk-white: #FFFFFF;
+  --color-werk-gray-100: #F8F8F8;
+  --color-werk-gray-200: #D1D1D2;
+  --color-werk-gray-300: #5F5F62;
+  --color-werk-gray-400: #DADADA;
+  --color-werk-accent: #FEC483;
+  
+  --font-family-sans: "Work Sans", system-ui, sans-serif;
+  
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 36px;
+  --font-size-4xl: 48px;
+  --font-size-5xl: 70px;
+  
+  --line-height-xs: 1.33;
+  --line-height-sm: 1.14;
+  --line-height-base: 1.5;
+  --line-height-lg: 1.78;
+  --line-height-xl: 1.4;
+  --line-height-2xl: 1.5;
+  --line-height-3xl: 1.22;
+  --line-height-4xl: 1.167;
+  --line-height-5xl: 1.086;
+  
+  --letter-spacing-xs: 0.16em;
+  --letter-spacing-3xl: -0.01388em;
+  --letter-spacing-5xl: -0.01429em;
+  
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-30: 7.5rem;
+  --spacing-34: 8.5rem;
+  --spacing-38: 9.5rem;
+  --spacing-42: 10.5rem;
+}
+
 @layer base {
   body {
-    @apply font-sans text-werk-black bg-werk-white antialiased;
+    font-family: var(--font-family-sans);
+    color: var(--color-werk-black);
+    background-color: var(--color-werk-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   h1 {
-    @apply text-5xl font-semibold leading-tight tracking-tight;
+    font-size: var(--font-size-5xl);
+    font-weight: 600;
+    line-height: var(--line-height-5xl);
+    letter-spacing: var(--letter-spacing-5xl);
   }
   
   h2 {
-    @apply text-4xl font-semibold leading-tight;
+    font-size: var(--font-size-4xl);
+    font-weight: 600;
+    line-height: var(--line-height-4xl);
   }
   
   h3 {
-    @apply text-3xl font-semibold leading-tight;
+    font-size: var(--font-size-3xl);
+    font-weight: 600;
+    line-height: var(--line-height-3xl);
+    letter-spacing: var(--letter-spacing-3xl);
   }
   
   h4 {
-    @apply text-2xl font-semibold;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
   }
   
   h5 {
-    @apply text-xl font-semibold;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
   }
   
   p {
-    @apply text-lg leading-relaxed;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
   }
 }
